@@ -1,0 +1,29 @@
+.card {
+    /* background-color: #fff; */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    transition: transform 0.2s;
+    cursor: pointer;
+    background-color:aliceblue;
+  
+  }
+  .time{
+    font-size: x-small;
+    font-weight: 300;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  .cardHeading {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .cardContent {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+  }

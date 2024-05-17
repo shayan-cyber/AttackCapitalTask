@@ -1,0 +1,45 @@
+/* styles/Dashboard.module.css */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .form {
+    margin-bottom: 40px;
+  }
+  
+  .input {
+    margin-bottom: 10px;
+    width: stretch;
+    padding: 10px;
+    font-size: 1rem;
+    display: block;
+    border-radius: 8px;
+    border: 1px solid black;
+  }
+  
+  .button {
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100%;
+
+  }
+  
+  .postList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .postItem {
+    margin-bottom: 20px;
+  }
+  .flex{
+    display: flex;
+    justify-content: center;
+  }
+  

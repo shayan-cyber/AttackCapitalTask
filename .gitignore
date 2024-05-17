@@ -8,20 +8,20 @@ yarn-error.log*
 *.log
 
 # Blog client ignores
-# /blog-client/.next
-# /blog-client/out
-# /blog-client/node_modules
-# /blog-client/.pnp
-# /blog-client.pnp.js
-# /blog-client/.vercel
-# /blog-client/.env.local
-# /blog-client/.env.development.local
-# /blog-client/.env.test.local
-# /blog-client/.env.production.local
-# /blog-client/public/static
-# /blog-client/coverage
-# /blog-client/build
-# /blog-client/*.tsbuildinfo
+/blog-client/.next
+/blog-client/out
+/blog-client/node_modules
+/blog-client/.pnp
+/blog-client.pnp.js
+/blog-client/.vercel
+/blog-client/.env.local
+/blog-client/.env.development.local
+/blog-client/.env.test.local
+/blog-client/.env.production.local
+/blog-client/public/static
+/blog-client/coverage
+/blog-client/build
+/blog-client/*.tsbuildinfo
 
 # IDE specific
 .vscode/
