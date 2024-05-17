@@ -8,19 +8,13 @@ const router = express.Router();
 router.post('/signup', async (req, res) => {
     const { email, password } = req.body;
     try {
-
         const existingUser = await User.findOne({ email });
         if (existingUser) {
             return res.status(400).send({ message: 'Email already in use' });
         }
-
-   
         const passwordHash = await bcrypt.hash(password, 10);
-
-
         const user = new User({ email, passwordHash });
         await user.save();
-
         res.status(201).send({ message: 'User created' });
     } catch (error) {
         res.status(500).send({ message: 'Internal server error' });
