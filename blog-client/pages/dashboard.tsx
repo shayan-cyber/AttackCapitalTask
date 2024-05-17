@@ -47,7 +47,7 @@ const Dashboard = () => {
         if (token) {
 
             const { userId } = jwtDecode<DecodedToken>(token);
-            const res = await axios.get(`http://localhost:3000/posts?author=${userId}`);
+            const res = await axios.get(process.env.NEXT_PUBLIC_SERVER_URL+`posts?author=${userId}`);
             let posts: Post[] = res.data;
             setPosts(posts);
         }

@@ -31,7 +31,9 @@ const Home: React.FC<{ posts: Post[] }> = ({ posts }) => (
 );
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  const res = await axios.get('http://localhost:3000/posts');
+
+  
+  const res = await axios.get(process.env.NEXT_PUBLIC_SERVER_URL + 'posts');
   const posts = res.data;
 
   return { props: { posts } };

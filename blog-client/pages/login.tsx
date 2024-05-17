@@ -15,7 +15,7 @@ const Login = () => {
     e.preventDefault();
     try{
 
-      const res = await axios.post('http://localhost:3000/auth/login', { email, password });
+      const res = await axios.post(process.env.NEXT_PUBLIC_SERVER_URL + 'auth/login', { email, password });
       localStorage.setItem('token', res.data.token);
       router.push('/dashboard');
     }catch(e:any){

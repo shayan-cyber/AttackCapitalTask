@@ -13,7 +13,7 @@ const Signup = () => {
   const handleSignup = async (e:FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try{
-      await axios.post('http://localhost:3000/auth/signup', { email, password });
+      await axios.post(process.env.NEXT_PUBLIC_SERVER_URL+'auth/signup', { email, password });
       router.push('/login');
     }catch(e:any){
       if(e?.response && e?.response.status === 400){
