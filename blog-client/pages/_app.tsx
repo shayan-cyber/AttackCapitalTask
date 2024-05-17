@@ -7,6 +7,7 @@ import TimeAgo from 'javascript-time-ago'
 
 import en from 'javascript-time-ago/locale/en'
 import ru from 'javascript-time-ago/locale/ru'
+import Navbar from "@/components/Navbar";
 
 TimeAgo.addDefaultLocale(en)
 TimeAgo.addLocale(ru)
@@ -14,7 +15,9 @@ TimeAgo.addLocale(ru)
 const inter = Inter({ subsets: ['latin'] })
 export default function App({ Component, pageProps }: AppProps) {
   return (
+  
     <main className={inter.className}>
+        <Navbar/>
       <ToastContainer
         position="top-right"
         autoClose={5000}

@@ -63,7 +63,7 @@ const Dashboard = () => {
 
             <form className={styles.form} onSubmit={(e) => handlePost(e)}>
                 <input  type="text" required className={styles.input} value={title} onChange={e => setTitle(e.target.value)} placeholder="Title" />
-                <textarea className={styles.input} required value={content} onChange={e => setContent(e.target.value)} placeholder="Content"  />
+                <textarea className={styles.input} rows={6} required value={content} onChange={e => setContent(e.target.value)} placeholder="Content"  />
                 <div className={styles.flex}>
                     <button className={styles.button} type='submit'>Post</button>
 

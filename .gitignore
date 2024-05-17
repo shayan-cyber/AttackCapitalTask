@@ -6,7 +6,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 *.log
-
+/.next
 # Blog client ignores
 /blog-client/.next
 /blog-client/out
