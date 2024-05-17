@@ -7,8 +7,12 @@ yarn-debug.log*
 yarn-error.log*
 *.log
 /.next
+.next/
+*.next/
+next
 # Blog client ignores
-/blog-client/.next
+blog-client/.next/
+/blog-client/
 /blog-client/out
 /blog-client/node_modules
 /blog-client/.pnp
